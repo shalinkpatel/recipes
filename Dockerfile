@@ -20,4 +20,4 @@ COPY dinner /root/recipes/dinner
 COPY drinks /root/recipes/drinks
 RUN ls /root/bin
 RUN mkdir /root/recipes/.cooklang
-RUN cd /root/recipes && ls && /root/bin/chef serve --host
+ENTRYPOINT cd /root/recipes && ls && /root/bin/chef serve --host
