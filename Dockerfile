@@ -18,6 +18,7 @@ RUN mkdir -p /root/recipes
 COPY bread /root/recipes/bread
 COPY dinner /root/recipes/dinner
 COPY drinks /root/recipes/drinks
+COPY desserts /root/recipes/desserts
 RUN ls /root/bin
 RUN mkdir /root/recipes/.cooklang
 ENTRYPOINT cd /root/recipes && ls && /root/bin/chef serve --host
